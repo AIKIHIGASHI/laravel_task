@@ -12,11 +12,35 @@ header {
     box-shadow: 0 2px 2px 0 rgb(218, 218, 218);
 }
 
+a {
+    text-decoration: none;
+}
+
 header > div > a {
     margin-left: 10px;
     color:rgb(196, 196, 196);
-    text-decoration: none;
 }
+
+header > div > a {
+    margin-left: 10px;
+    color:rgb(196, 196, 196);
+}
+
+.user-menu {
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 4px;
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    right: 30px;
+    background: white;
+    padding: 10px;
+}
+
+.user-menu > a {
+    color: black;
+}
+
 
 .form-box {
     border: 1px solid rgb(221, 221, 221);
@@ -64,3 +88,8 @@ header > div > a {
     top: 5px;
 }
 
+.error-box > li {
+    color: red;
+    text-align: center;
+    list-style: none;
+}

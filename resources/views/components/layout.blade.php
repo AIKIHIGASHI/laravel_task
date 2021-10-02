@@ -11,8 +11,15 @@
             Laravel
         </div>
         <div>
+            @if (Session::exists('currentUserName'))
+            <div>{{Session::get('currentUserName')}}▼</div>
+            <div class="user-menu">
+                <a href="">logout</a>
+            </div>
+            @else
             <a href="{{ route('login.index') }}">Login</a>
             <a href="{{ route('register.create') }}">Register</a>
+            @endif
         </div>
     </header>
     {{ $slot }}
